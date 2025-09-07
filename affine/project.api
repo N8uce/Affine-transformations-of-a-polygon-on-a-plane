@@ -1,0 +1,31 @@
+# control.h task.h
+!control.cpp control.h graphics.h keys_n_colors.h #<#>
+!main.cpp cctype cerrno clocale cmath control.h cstdint cstdio cstdlib ctype.h cwchar cwctype errno.h exception fstream graphics.h initializer_list ios iosfwd iostream istream keys_n_colors.h limits limits.h locale.h math.h new ostream signal.h stddef.h stdexcept stdint.h stdio.h stdlib.h streambuf string string_view system_error task.h type_traits typeinfo wchar.h wctype.h #<#>
+!task.cpp cctype cerrno clocale cmath cstdint cstdio cstdlib ctype.h cwchar cwctype errno.h exception graphics.h initializer_list ios iosfwd iostream istream keys_n_colors.h limits limits.h locale.h math.h new ostream signal.h stddef.h stdexcept stdint.h stdio.h stdlib.h streambuf string string_view system_error task.h type_traits typeinfo wchar.h wctype.h #<#>
+ struct@Control _type_ #<control.h>
+Figure _type_ #<task.h>
+Figure(int, double, double, Point* xy) #<task.h>
+Point _type_ #<task.h>
+_USE_MATH_DEFINES #<main.cpp>
+control_values : enum #<control.h>
+controls : Control[] #<control.cpp>
+create_control(int i, int left, int top, const char* file_name) -> void #<control.cpp>
+create_control(int, int, int, const char*) -> void #<control.h>
+create_int() -> void #<main.cpp>
+main() -> int #<main.cpp>
+save() -> void #<task.h>
+select_control() -> int #<control.h>
+	Control::left : int #<control.h>
+	Control::top : int #<control.h>
+	Control::right : int #<control.h>
+	Control::bottom : int #<control.h>
+	Figure:%n : int #<task.h>
+	Figure:%xy : Point* #<task.h>
+	Figure:%x0 : double #<task.h>
+	Figure:%y0 : double #<task.h>
+	Figure::draw() -> void #<task.h>
+	Figure::shift(int, int) -> void #<task.h>
+	Figure::ChangeScale(double) -> void #<task.h>
+	Figure::rotate(double) -> void #<task.h>
+	Point::x : double #<task.h>
+	Point::y : double #<task.h>
